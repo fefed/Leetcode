@@ -9,7 +9,7 @@ class O58_2 {
     // 方法一
     /*
     public String reverseLeftWords(String s, int n) {
-        StringBuilder res = new StringBuilder();
+        return s.substring(n, s.length()) + s.substring(0, n);
     }
     */
     public String reverseLeftWords(String s, int n) {
