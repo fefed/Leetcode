@@ -9,30 +9,28 @@ import java.util.Set;
  */
 public class O35 {
     // 方法一
-    /*
-    public Node copyRandomList(Node head) {
-        Node tmp = head;
-        HashMap<Node, Node> map = new HashMap<>();
+    public Node35 copyRandomList1(Node35 head) {
+        Node35 tmp = head;
+        HashMap<Node35, Node35> map = new HashMap<>();
         while (head != null) {
-            map.put(head, new Node(head.val));
+            map.put(head, new Node35(head.val));
             head = head.next;
         }
 
-        Set<Node> nodes = map.keySet();
-        for (Node node : nodes) {
-            Node next = node.next;
-            Node rand = node.random;
+        Set<Node35> nodes = map.keySet();
+        for (Node35 node : nodes) {
+            Node35 next = node.next;
+            Node35 rand = node.random;
             map.get(node).next = map.get(next);
             map.get(node).random = map.get(rand);
         }
         return map.get(tmp);
     }
-    */
-    public Node copyRandomList(Node head) {
-        Node cur = head;
+    public Node35 copyRandomList(Node35 head) {
+        Node35 cur = head;
         // 复制节点
         while (cur != null) {
-            Node son = new Node(cur.val); // 新节点
+            Node35 son = new Node35(cur.val); // 新节点
             son.next = cur.next; // 插入旧节点后
             cur.next = son;
             cur = son.next; // 移向下一个旧节点
@@ -46,7 +44,7 @@ public class O35 {
         }
 
         // 拆分链表
-        Node pre = head, res = head.next;
+        Node35 pre = head, res = head.next;
         cur = head.next;
         while(cur.next != null) {
             pre.next = cur.next;
@@ -59,13 +57,14 @@ public class O35 {
     }
 }
 
-// Definition for a Node.
-class Node {
-    int val;
-    Node next;
-    Node random;
 
-    public Node(int val) {
+// Definition for a Node.
+class Node35 {
+    int val;
+    Node35 next;
+    Node35 random;
+
+    public Node35(int val) {
         this.val = val;
         this.next = null;
         this.random = null;
