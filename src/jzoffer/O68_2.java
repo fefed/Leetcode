@@ -42,6 +42,9 @@ public class O68_2 {
 
     // 方法二：先序遍历，递归+分治
     // 将找p或q和最近公共祖先结合
+    // 1. 若树里面存在p，也存在q，则返回他们的公共祖先。
+    // 2. 若树里面只存在p，或只存在q，则返回存在的那一个。
+    // 3. 若树里面既不存在p，也不存在q，则返回null。
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) return root;
         TreeNode left = lowestCommonAncestor(root.left, p, q);
