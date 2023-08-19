@@ -1,4 +1,4 @@
-package Acwing.a787;
+package acwing.a787;
 
 import java.io.BufferedReader;
 import java.io.IOException;

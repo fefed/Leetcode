@@ -1,4 +1,4 @@
-package Acwing.a785;
+package acwing.a785;
 
 import java.util.Scanner;
 
