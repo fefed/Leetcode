@@ -27,8 +27,4 @@ public class L56 {
         res.add(new int[]{start, end});
         return res.toArray(new int[res.size()][]);
     }
-
-    public static void main(String[] args) {
-        new L56().merge(new int[][]{{2, 6}, {8, 10}, {1, 3}, {15, 18}});
-    }
 }

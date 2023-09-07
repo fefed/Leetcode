@@ -1,5 +1,6 @@
 package interview150;
 
+@SuppressWarnings("unused")
 public class ListNode {
     int val;
     ListNode next;
