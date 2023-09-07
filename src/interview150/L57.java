@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * @author 张东亚
  * @version 1.0
  */
+@SuppressWarnings("unused")
 public class L57 {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         ArrayList<int[]> res = new ArrayList<>();

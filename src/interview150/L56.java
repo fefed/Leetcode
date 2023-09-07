@@ -8,6 +8,7 @@ import java.util.Comparator;
  * @author 张东亚
  * @version 1.0
  */
+@SuppressWarnings("unused")
 public class L56 {
     // 贪心
     public int[][] merge(int[][] intervals) {
