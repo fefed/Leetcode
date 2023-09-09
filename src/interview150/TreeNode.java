@@ -1,5 +1,6 @@
 package interview150;
 
+@SuppressWarnings("unused")
 public class TreeNode {
     int val;
     TreeNode left;

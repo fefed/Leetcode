@@ -11,6 +11,7 @@ import java.util.Objects;
 public class L155 {
 
 }
+@SuppressWarnings("unused")
 class MinStack {
     private final LinkedList<Integer> stack;
     private final LinkedList<Integer> minStack;
