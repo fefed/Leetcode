@@ -4,6 +4,7 @@ package interview150.nodes;
  * @author 张东亚
  * @version 1.0
  */
+@SuppressWarnings("unused")
 public class Node {
     public int val;
     public Node left;
